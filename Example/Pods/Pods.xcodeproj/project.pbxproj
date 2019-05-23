@@ -13,7 +13,8 @@
 		8B32805713C19D212758B0B19C158C64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		973C80B7A8C5AE929ABF9B45EECF38B3 /* Pods-YMUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AC22ACA3382C25D713B157F856147E6 /* Pods-YMUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7F30BE86EA31596D24A8D63121FAF1C /* YMUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6107AE2DA79AFBE3AB35131F477B97 /* YMUtils-dummy.m */; };
-		BA41F7306AF88A3F5E10772B880706BC /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC4ECC70F9F522C26EB4F1B9C785713 /* ReplaceMe.m */; };
+		B476655A2296705D007EB73E /* YMDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B47665552296705D007EB73E /* YMDeviceUtil.m */; };
+		B476655C2296705D007EB73E /* YMDeviceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = B47665572296705D007EB73E /* YMDeviceUtil.h */; };
 		D41C6E78AD9836F44B81B5D1B8168587 /* Pods-YMUtils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E66E53BB3AEAC69D7F90AF1D08E569B /* Pods-YMUtils_Example-dummy.m */; };
 		F6194B267946426C57C4499D8AEC804B /* Pods-YMUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C08ACAFACC8CC375E8EA9C024351343E /* Pods-YMUtils_Tests-dummy.m */; };
 		F9A2F6384284A130A12DBE044A638C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -38,9 +39,8 @@
 
 /* Begin PBXFileReference section */
 		02E56A3327C80E845D0BAAAE7CDEBE85 /* YMUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YMUtils-Info.plist"; sourceTree = "<group>"; };
-		0FC4ECC70F9F522C26EB4F1B9C785713 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = YMUtils/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		128E0573CDCB8CB1D5CB212EEF6A6063 /* YMUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMUtils-umbrella.h"; sourceTree = "<group>"; };
-		20818099E4004BA2CA7A2F0B43BC7217 /* Pods_YMUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YMUtils_Tests.framework; path = "Pods-YMUtils_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20818099E4004BA2CA7A2F0B43BC7217 /* Pods_YMUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		236EB3CD47230A36D90C5AD0CC8CF060 /* Pods-YMUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YMUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
 		36CB33E4FE92444CD377F95267682122 /* YMUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YMUtils.xcconfig; sourceTree = "<group>"; };
 		390DBA570DDF948EDBA382E65069DAEF /* Pods-YMUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YMUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -53,18 +53,20 @@
 		8C90A8F5A6CBCCD857906108728696E0 /* Pods-YMUtils_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YMUtils_Tests-Info.plist"; sourceTree = "<group>"; };
 		9714672B9B3E556EE89BC05DC3F8E00A /* Pods-YMUtils_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YMUtils_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9AC22ACA3382C25D713B157F856147E6 /* Pods-YMUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YMUtils_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A386E3D38DB161928FAF6C3F6C464812 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A386E3D38DB161928FAF6C3F6C464812 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A99C557C4BD98AC11D5F77C903F9042B /* YMUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YMUtils.modulemap; sourceTree = "<group>"; };
 		AA85A2B03C6A3044EAFEE7ABDD01ECFF /* YMUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YMUtils-prefix.pch"; sourceTree = "<group>"; };
 		ABF7401014E5617E1104B1D02990AFB4 /* Pods-YMUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YMUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AD86A7D551DCD922D5615FD921F6D8D6 /* YMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YMUtils.framework; path = YMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B200E69731C8C211BA8FF79AFE4DF501 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		B57C31B366275E2B2C1408B96AE76362 /* YMUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YMUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AD86A7D551DCD922D5615FD921F6D8D6 /* YMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B200E69731C8C211BA8FF79AFE4DF501 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B47665552296705D007EB73E /* YMDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDeviceUtil.m; sourceTree = "<group>"; };
+		B47665572296705D007EB73E /* YMDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDeviceUtil.h; sourceTree = "<group>"; };
+		B57C31B366275E2B2C1408B96AE76362 /* YMUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = YMUtils.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		C08ACAFACC8CC375E8EA9C024351343E /* Pods-YMUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YMUtils_Tests-dummy.m"; sourceTree = "<group>"; };
 		C7CA9FDF9B7ED4A29D471E778E15520F /* Pods-YMUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YMUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CF22615D0A659B10415D1D2859C90AAC /* Pods_YMUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YMUtils_Example.framework; path = "Pods-YMUtils_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF22615D0A659B10415D1D2859C90AAC /* Pods_YMUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C8280F3972BCA34E83582FF7F56FF7 /* Pods-YMUtils_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YMUtils_Example-Info.plist"; sourceTree = "<group>"; };
 		DA3C094F12B8597789B96313D36337C6 /* Pods-YMUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YMUtils_Tests.modulemap"; sourceTree = "<group>"; };
 		E7E9B0493F3634C15794F8871DC2ADF3 /* Pods-YMUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YMUtils_Example.modulemap"; sourceTree = "<group>"; };
@@ -174,6 +176,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		B47665532296705D007EB73E /* YMUtils */ = {
+			isa = PBXGroup;
+			children = (
+				B47665542296705D007EB73E /* Classes */,
+				B47665582296705D007EB73E /* Assets */,
+			);
+			path = YMUtils;
+			sourceTree = "<group>";
+		};
+		B47665542296705D007EB73E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B47665552296705D007EB73E /* YMDeviceUtil.m */,
+				B47665572296705D007EB73E /* YMDeviceUtil.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B47665582296705D007EB73E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		CC77086F9A96932ED9AF8C899477E287 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +231,7 @@
 		D36F08C01ABDC26B3C1ADB19E5546F19 /* YMUtils */ = {
 			isa = PBXGroup;
 			children = (
-				0FC4ECC70F9F522C26EB4F1B9C785713 /* ReplaceMe.m */,
+				B47665532296705D007EB73E /* YMUtils */,
 				325B55524B823A72045A2B6A5826AA54 /* Pod */,
 				678EDD977A8FB997D47A7CD957F8353C /* Support Files */,
 			);
@@ -228,6 +255,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B476655C2296705D007EB73E /* YMDeviceUtil.h in Headers */,
 				56687751CD611329625C0EE850758795 /* YMUtils-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +349,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -372,8 +401,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA41F7306AF88A3F5E10772B880706BC /* ReplaceMe.m in Sources */,
 				A7F30BE86EA31596D24A8D63121FAF1C /* YMUtils-dummy.m in Sources */,
+				B476655A2296705D007EB73E /* YMDeviceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,8 +485,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
