@@ -64,7 +64,7 @@
 		8ADF089F2EADBF4FF07B1CE7 /* Pods-YMUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMUtils_Tests.release.xcconfig"; path = "Target Support Files/Pods-YMUtils_Tests/Pods-YMUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8C75999F3C0A4E2E014B4185 /* Pods_YMUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBA41D686654F9D7964BAD4 /* Pods_YMUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YMUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C2782C619F0A2E84379C99C /* YMUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YMUtils.podspec; path = ../YMUtils.podspec; sourceTree = "<group>"; };
+		9C2782C619F0A2E84379C99C /* YMUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YMUtils.podspec; path = ../YMUtils.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CB572C8B971C48614AC2EF27 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F8F9DE49C4E7A4A235A02E5F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */

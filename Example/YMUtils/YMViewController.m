@@ -7,7 +7,8 @@
 //
 
 #import "YMViewController.h"
-//#import "YMDeviceUtil.h"
+#import "YMDeviceUtil.h"
+
 
 @interface YMViewController ()
 
@@ -20,7 +21,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-
+    [YMDeviceUtil printDeviceName];
 }
 
 - (void)didReceiveMemoryWarning

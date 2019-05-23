@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "YMDeviceUtil.h"
 
 FOUNDATION_EXPORT double YMUtilsVersionNumber;
 FOUNDATION_EXPORT const unsigned char YMUtilsVersionString[];
