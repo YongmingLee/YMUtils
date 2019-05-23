@@ -1,0 +1,16 @@
+PODS:
+  - YMUtils (0.1.0)
+
+DEPENDENCIES:
+  - YMUtils (from `../`)
+
+EXTERNAL SOURCES:
+  YMUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YMUtils: 4849f01a163b3175bf021a6c4327dd8ad5a3afcc
+
+PODFILE CHECKSUM: dac3d5bcb5c5fb34d4222c51a4e9f6ee1632903e
+
+COCOAPODS: 1.6.1
